@@ -1,13 +1,13 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import StatusCards from "./components/StatusCards";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-red-300">
-      <h1>APP</h1>
-      <div className="w-10 h-10 bg-black-300">
-        <h2>DIV</h2>
-        <div>HOLA</div>
-      </div>
+    <div className="h-screen flex -md:flex-col">
+      <Navbar />
+      <StatusCards />
     </div>
   );
 }
