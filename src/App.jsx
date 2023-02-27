@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import StatusCards from "./components/StatusCards";
 
 function App() {
+  const [taskStatus, setTaskStatus] = useState();
   return (
     <div className="h-screen flex -md:flex-col">
       <Navbar />
